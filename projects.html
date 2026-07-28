@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Heet Patel</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="led"></span>Heet Patel</a>
+    <ul class="navlinks" id="navlinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="navtoggle" id="navtoggle" aria-label="Toggle menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<section class="section" style="padding-top:56px;">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-tag">run log</span>
+      <h2>Projects</h2>
+      <p style="color:var(--ink-soft); max-width:56ch;">Each project below, logged the way I actually track my own work — filter by the kind of problem it solves.</p>
+    </div>
+
+    <div class="filter-row">
+      <button class="filter-chip active" data-filter="all">All</button>
+      <button class="filter-chip" data-filter="mlops">MLOps</button>
+      <button class="filter-chip" data-filter="ml">Machine Learning</button>
+      <button class="filter-chip" data-filter="web">Web</button>
+    </div>
+
+    <div class="run-grid">
+
+      <div class="run-card" data-tags="mlops,web">
+        <div class="run-top">
+          <span class="run-id mono">RUN-001</span>
+          <span class="run-status">completed</span>
+        </div>
+        <h3>Medical Insurance MLOps Pipeline</h3>
+        <span class="run-role">Team lead · 5-person team</span>
+        <ul>
+          <li>Designed the Docker Compose infrastructure, plus FastAPI and Streamlit scaffolds, from scratch</li>
+          <li>Built a complete Airflow 3 ingestion DAG; resolved Airflow 3 migration issues (DAG Processor separation, JWT secret alignment)</li>
+          <li>Owned pull request reviews and coordination across a main/develop/feature branch workflow</li>
+        </ul>
+        <div class="run-bottom">
+          <div class="tags">
+            <span class="tag">Docker</span><span class="tag">Airflow</span><span class="tag">FastAPI</span><span class="tag">Python</span><span class="tag">GitHub</span>
+          </div>
+          <svg class="sparkline" viewBox="0 0 120 34"><path d="M2,26 L20,22 L38,24 L56,14 L74,17 L92,6 L118,9"/></svg>
+        </div>
+        <a class="run-link" href="https://github.com/HeetPatel3184" target="_blank" rel="noopener">View on GitHub →</a>
+      </div>
+
+      <div class="run-card" data-tags="ml">
+        <div class="run-top">
+          <span class="run-id mono">RUN-002</span>
+          <span class="run-status">completed</span>
+        </div>
+        <h3>Music Taste Prediction</h3>
+        <span class="run-role">Personal ML project</span>
+        <ul>
+          <li>Trained a Random Forest classifier on a 114k-track Kaggle dataset of Spotify audio features</li>
+          <li>Deployed as an interactive Streamlit app with a Spotify-themed UI, Plotly charts, and embedded audio players</li>
+        </ul>
+        <div class="run-bottom">
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">Streamlit</span><span class="tag">Plotly</span>
+          </div>
+          <svg class="sparkline" viewBox="0 0 120 34"><path d="M2,10 L20,18 L38,12 L56,22 L74,15 L92,24 L118,20"/></svg>
+        </div>
+        <a class="run-link" href="https://github.com/HeetPatel3184" target="_blank" rel="noopener">View on GitHub →</a>
+      </div>
+
+      <div class="run-card" data-tags="web">
+        <div class="run-top">
+          <span class="run-id mono">RUN-003</span>
+          <span class="run-status">completed</span>
+        </div>
+        <h3>TradeVerse</h3>
+        <span class="run-role">Real-time stock monitoring &amp; trading platform</span>
+        <ul>
+          <li>Built a backtesting engine using Exponential Moving Average (EMA) strategies across multiple timeframes</li>
+          <li>Real-time price feeds via the yfinance API, personal watchlists, and an alert-notification system</li>
+          <li>Optimized database queries, cutting data retrieval time by 40%</li>
+        </ul>
+        <div class="run-bottom">
+          <div class="tags">
+            <span class="tag">Django</span><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">Chart.js</span><span class="tag">SQLite</span>
+          </div>
+          <svg class="sparkline" viewBox="0 0 120 34"><path d="M2,24 L20,20 L38,22 L56,12 L74,16 L92,8 L118,4"/></svg>
+        </div>
+        <a class="run-link" href="https://github.com/HeetPatel3184" target="_blank" rel="noopener">View on GitHub →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  Built &amp; maintained by Heet Patel · Saint-Maur-des-Fossés, France
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
