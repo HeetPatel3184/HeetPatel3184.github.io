@@ -12,11 +12,11 @@
   <div class="wrap">
     <a class="brand" href="index.html"><span class="led"></span>Heet Patel</a>
     <ul class="navlinks" id="navlinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="projects.html" class="active">Projects</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#education">Education</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
     </ul>
     <button class="navtoggle" id="navtoggle" aria-label="Toggle menu">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -24,15 +24,25 @@
   </div>
 </nav>
 
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <linearGradient id="sparkGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5B5FEF"/>
+      <stop offset="100%" stop-color="#14C6B7"/>
+    </linearGradient>
+  </defs>
+</svg>
+
 <section class="section" style="padding-top:56px;">
   <div class="wrap">
-    <div class="section-head">
+    <a class="back-link" href="index.html#projects">← Back to overview</a>
+    <div class="section-head" data-reveal>
       <span class="section-tag">run log</span>
       <h2>Projects</h2>
       <p style="color:var(--ink-soft); max-width:56ch;">Each project below, logged the way I actually track my own work — filter by the kind of problem it solves.</p>
     </div>
 
-    <div class="filter-row">
+    <div class="filter-row" data-reveal style="--d:.1s">
       <button class="filter-chip active" data-filter="all">All</button>
       <button class="filter-chip" data-filter="mlops">MLOps</button>
       <button class="filter-chip" data-filter="ml">Machine Learning</button>
@@ -41,7 +51,7 @@
 
     <div class="run-grid">
 
-      <div class="run-card" data-tags="mlops,web">
+      <div class="run-card" data-tags="mlops,web" data-reveal style="--d:0s">
         <div class="run-top">
           <span class="run-id mono">RUN-001</span>
           <span class="run-status">completed</span>
@@ -62,7 +72,7 @@
         <a class="run-link" href="https://github.com/HeetPatel3184" target="_blank" rel="noopener">View on GitHub →</a>
       </div>
 
-      <div class="run-card" data-tags="ml">
+      <div class="run-card" data-tags="ml" data-reveal style="--d:.1s">
         <div class="run-top">
           <span class="run-id mono">RUN-002</span>
           <span class="run-status">completed</span>
@@ -82,7 +92,7 @@
         <a class="run-link" href="https://github.com/HeetPatel3184" target="_blank" rel="noopener">View on GitHub →</a>
       </div>
 
-      <div class="run-card" data-tags="web">
+      <div class="run-card" data-tags="web" data-reveal style="--d:.2s">
         <div class="run-top">
           <span class="run-id mono">RUN-003</span>
           <span class="run-status">completed</span>

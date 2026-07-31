@@ -13,11 +13,11 @@
   <div class="wrap">
     <a class="brand" href="index.html"><span class="led"></span>Heet Patel</a>
     <ul class="navlinks" id="navlinks">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#about" data-spy>About</a></li>
+      <li><a href="#projects" data-spy>Projects</a></li>
+      <li><a href="#education" data-spy>Education</a></li>
+      <li><a href="#skills" data-spy>Skills</a></li>
+      <li><a href="#contact" data-spy>Contact</a></li>
     </ul>
     <button class="navtoggle" id="navtoggle" aria-label="Toggle menu">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -25,15 +25,36 @@
   </div>
 </nav>
 
-<section class="hero">
-  <div class="wrap">
-    <span class="kicker mono">MSc Computer Science · Data Science &amp; Analytics · EPITA, Paris</span>
-    <h1>Turning raw data into pipelines &mdash; and pipelines into decisions.</h1>
-    <p class="lede">I'm Heet Patel, based in Saint-Maur-des-Fossés, France. I build the infrastructure that keeps data pipelines reliable, and the models that run on top of them. Currently looking for a Data Science / Data Engineering internship for 2027.</p>
+<main>
 
-    <div class="cta-row">
-      <a class="btn btn-primary" href="projects.html">View projects</a>
-      <a class="btn btn-outline" href="assets/resume.pdf" download>Download résumé</a>
+<section class="hero">
+  <div class="blob blob-a"></div>
+  <div class="blob blob-b"></div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="kicker mono">MSc Computer Science · Data Science &amp; Analytics · EPITA, Paris</span>
+        <h1>Turning raw data into <span class="grad">pipelines</span> &mdash; and pipelines into decisions.</h1>
+        <p class="lede">I'm Heet Patel, based in Saint-Maur-des-Fossés, France. I build the infrastructure that keeps data pipelines reliable, and the models that run on top of them. Currently looking for a Data Science / Data Engineering internship for 2027.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#projects">View projects</a>
+          <a class="btn btn-outline" href="assets/resume.pdf" download>Download résumé</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="avatar-stage">
+          <div class="cube">
+            <div class="face f-front">HP</div>
+            <div class="face f-back">DS</div>
+            <div class="face f-right">ML</div>
+            <div class="face f-left">🐍</div>
+            <div class="face f-top">📊</div>
+            <div class="face f-bottom">🐳</div>
+          </div>
+        </div>
+        <p class="avatar-caption">// placeholder 3D mark — swap for your own avatar</p>
+      </div>
     </div>
 
     <div class="log-panel">
@@ -46,33 +67,133 @@
     </div>
 
     <div class="stat-strip">
-      <div class="stat">
-        <div class="n">3</div>
+      <div class="stat" data-reveal style="--d:.05s">
+        <div class="n"><span data-count="3"></span></div>
         <div class="l mono">SHIPPED PROJECTS</div>
       </div>
-      <div class="stat">
-        <div class="n">5</div>
+      <div class="stat" data-reveal style="--d:.15s">
+        <div class="n"><span data-count="5"></span></div>
         <div class="l mono">TEAM MEMBERS LED</div>
       </div>
-      <div class="stat">
-        <div class="n">2027</div>
+      <div class="stat" data-reveal style="--d:.25s">
+        <div class="n"><span data-count="2027"></span></div>
         <div class="l mono">TARGET INTERNSHIP YEAR</div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="about">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head" data-reveal>
       <span class="section-tag">about</span>
       <h2>What I actually do</h2>
     </div>
-    <p style="max-width:62ch;color:var(--ink-soft);">I'm an MSc Computer Science student specializing in Data Science &amp; Analytics at EPITA, Paris, following a Bachelor of Science in Information Technology from Charotar University, Gujarat, India.</p>
-    <p style="max-width:62ch;color:var(--ink-soft);">My focus sits between <strong style="color:var(--ink);">data engineering and applied machine learning</strong> — most recently leading a five-person team through a full MLOps build: Docker, Airflow, and FastAPI, plus the unglamorous but essential work of making a pipeline hold up against real data. I'm currently strengthening that infrastructure side further while applying for 2027 internships.</p>
-    <a class="btn btn-outline" href="projects.html" style="margin-top:10px;">See how that shows up in my projects →</a>
+    <p data-reveal style="max-width:62ch;color:var(--ink-soft);">I'm an MSc Computer Science student specializing in Data Science &amp; Analytics at EPITA, Paris, following a Bachelor of Science in Information Technology from Charotar University, Gujarat, India.</p>
+    <p data-reveal style="--d:.1s; max-width:62ch;color:var(--ink-soft);">My focus sits between <strong style="color:var(--ink);">data engineering and applied machine learning</strong> — most recently leading a five-person team through a full MLOps build: Docker, Airflow, and FastAPI, plus the unglamorous but essential work of making a pipeline hold up against real data. I'm currently strengthening that infrastructure side further while applying for 2027 internships.</p>
   </div>
 </section>
+
+<section class="section" id="projects">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <span class="section-tag">run log</span>
+      <h2>Projects</h2>
+      <p style="color:var(--ink-soft); max-width:56ch;">A quick look — the full write-up for each lives on its own page.</p>
+    </div>
+
+    <div class="overview-grid">
+      <div class="overview-card" data-reveal style="--d:0s">
+        <h3>Medical Insurance MLOps Pipeline</h3>
+        <p>Led a 5-person team building a Docker/Airflow/FastAPI pipeline from scratch.</p>
+      </div>
+      <div class="overview-card" data-reveal style="--d:.08s">
+        <h3>Music Taste Prediction</h3>
+        <p>Random Forest classifier on 114k Spotify tracks, deployed with Streamlit.</p>
+      </div>
+      <div class="overview-card" data-reveal style="--d:.16s">
+        <h3>TradeVerse</h3>
+        <p>Real-time stock monitoring platform with an EMA backtesting engine.</p>
+      </div>
+    </div>
+
+    <a class="btn btn-primary section-footer-cta" data-reveal href="projects.html">View all projects in detail →</a>
+  </div>
+</section>
+
+<section class="section" id="education">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <span class="section-tag">training schedule</span>
+      <h2>Education</h2>
+    </div>
+
+    <div class="overview-grid">
+      <div class="overview-card" data-reveal style="--d:0s">
+        <h3>MSc Computer Science — Data Science &amp; Analytics</h3>
+        <p>EPITA, Paris, France · 2026 – Present</p>
+      </div>
+      <div class="overview-card" data-reveal style="--d:.08s">
+        <h3>Bachelor of Science in Information Technology</h3>
+        <p>Charotar University of Science &amp; Technology, Gujarat, India · 2022 – 2025</p>
+      </div>
+    </div>
+
+    <a class="btn btn-primary section-footer-cta" data-reveal href="education.html">View education in detail →</a>
+  </div>
+</section>
+
+<section class="section" id="skills">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <span class="section-tag">calibration</span>
+      <h2>Skills</h2>
+    </div>
+
+    <div class="tags" data-reveal style="margin-bottom:24px;">
+      <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Docker</span>
+      <span class="tag">Apache Airflow</span><span class="tag">FastAPI</span><span class="tag">scikit-learn</span>
+      <span class="tag">Git / GitHub</span><span class="tag">Django</span>
+    </div>
+
+    <a class="btn btn-primary section-footer-cta" data-reveal href="skills.html">View full skills breakdown →</a>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <span class="section-tag">output</span>
+      <h2>Get in touch</h2>
+      <p style="color:var(--ink-soft); max-width:56ch;">Open to Data Science and Data Engineering internships for 2027. Reach out if you're building something data-heavy and want an extra pair of hands.</p>
+    </div>
+
+    <div class="contact-grid">
+      <a class="contact-card" data-reveal style="--d:0s" href="mailto:patelheet1412@gmail.com">
+        <span class="label">Email</span>
+        <span class="value">patelheet1412@gmail.com</span>
+      </a>
+      <a class="contact-card" data-reveal style="--d:.06s" href="tel:+33752945558">
+        <span class="label">Phone</span>
+        <span class="value">+33 07 52 94 55 58</span>
+      </a>
+      <a class="contact-card" data-reveal style="--d:.12s" href="https://linkedin.com/in/heetpatel1412/" target="_blank" rel="noopener">
+        <span class="label">LinkedIn</span>
+        <span class="value">heetpatel1412</span>
+      </a>
+      <a class="contact-card" data-reveal style="--d:.18s" href="https://github.com/HeetPatel3184" target="_blank" rel="noopener">
+        <span class="label">GitHub</span>
+        <span class="value">HeetPatel3184</span>
+      </a>
+      <a class="contact-card" data-reveal style="--d:.24s" href="assets/resume.pdf" download>
+        <span class="label">Résumé</span>
+        <span class="value">Download PDF ↓</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
 
 <footer class="site-footer">
   Built &amp; maintained by Heet Patel · Saint-Maur-des-Fossés, France
